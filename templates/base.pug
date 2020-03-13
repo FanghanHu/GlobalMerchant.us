@@ -1,0 +1,85 @@
+mixin HrImg(url, position)
+    .hr-img
+        img(src=url style='top:-' + position + ';')
+        .wrapper.d-flex.flex-column.justify-content-center
+            if block
+                block
+
+mixin Youtube(url, width, height)
+    iframe(width=width?width:'1280' height=height?height:'720' src=url frameborder='0' allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen)&attributes(attributes)
+
+doctype html
+head
+    meta(charset='UTF-8' name="viewport" content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0')
+    title Global Merchant Processing
+
+    //-JQuery
+    script(src='resources/js/jquery-3.4.1.min.js')
+
+    //-Popper
+    script(src='resources/js/popper.min.js')
+
+    //-Bootstrap
+    link(rel='stylesheet' type='text/css' href='resources/css/bootstrap.min.css')
+    script(src='resources/js/bootstrap.min.js')
+
+    //- Web font
+    link(rel='stylesheet' href='https://fonts.googleapis.com/css?family=Mitr|Russo+One&display=swap')
+
+    //-font awesome
+    script(src='https://kit.fontawesome.com/8ff80e78ed.js' crossorigin="anonymous")
+
+    style.
+    block styles
+        link(rel='stylesheet' type='text/css' href='resources/css/main.css')
+body
+    header
+        nav#navbar.navbar.navbar-default.shadow
+            a.navbar-brand.unselectable.p-1 Global Merchant Processing
+            ul.nav.navbar-nav.flex-row
+                li
+                    a.nav-link.active(href='index.html') Home
+                li
+                    a.nav-link(href='contacts.html') Contacts
+                li
+                    a.nav-link(href='hardware.html') Hardware
+                li
+                    a.nav-link(href='software.html') Software
+    main.container-fluid.p-0.flex-grow-1
+            block contents
+                p Please replace the content block.
+    footer.mt-5
+        hr.m-0.p-0
+        .d-flex.flex-wrap.justify-content-center.h7.mt-3
+            .ml-3
+                span.font-weight-bold Office Number:
+                span.ml-1 713-952-3600
+            .ml-3
+                span.font-weight-bold Fax:
+                span.ml-1 713-952-3605
+            .ml-3
+                span.font-weight-bold Office Hours:
+                span.ml-1 Mon-Fri 9:00am-6:00pm
+        .text-center
+            span.font-weight-bold Address:
+            span.ml-1 2825 Wilcrest Drive #123, Houston, Tx 77042
+        .row.m-0.p-0
+            .col-6.d-flex.flex-wrap.justify-content-center.align-content-center
+                img.my-md-auto(src='resources/imgs/global-logo.jpg' width='195px' height='155px')
+                .d-flex.flex-column.justify-content-center.my-md-auto
+                    span(style="font-family: 'Russo One', sans-serif; color: #A8CD40; font-size:3.5rem;") Global
+                    span(style="font-family: 'Mitr', sans-serif; color: #0358AF; font-size:0.8rem;").text-right Merchant Processing Inc.
+            .col-6
+                .d-flex.flex-wrap.justify-content-center.mt-4
+                    .h5.my-auto.mx-2 Powered By:
+                    img.my-auto.mx-2(src='resources/imgs/first-data-logo.png' width='150px' height='111px')
+                    img.my-auto.mx-2(src='resources/imgs/credit-cards-logo.png' width='100px' height='100px')
+                    img.my-auto.mx-2(src='resources/imgs/pax-logo.png' width='200px' height='120px')
+                    img.my-auto.mx-2(src='resources/imgs/mcpos-logo.png' width='105px' height='90px')
+        .text-center.pt-2.text-black-50 Global Merchant Processing Inc. is a registered ISO/MSP of Wells Fargo Bank, N.A., Concord, CA
+        .text-center.pb-2.text-black-50 Trademarks, service marks and trade names referenced in this material are the property of their respective owners
+        .bg-dark.text-center
+            hr.p-0.m-0
+            .text-white-50.p-2 Copyright © 2020 Global Merchant Processing Inc. All right reserved.
+    block javascript
+        script(src="resources/js/main.js")

@@ -1,0 +1,120 @@
+extends templates/base
+
+block contents
+    .container.mx-auto.my-3.d-flex.flex-column
+        #aio.row.bg-white.shadow.rounded.p-5.m-2
+            .col-12.mb-5
+                .h1.font-weight-bold.text-center.text-primary All-In-One POS Computer:
+            .col-12.col-lg-6
+                .h3.text-dark.m-2.h2 POS Bank Apexa G
+                ul
+                    li Low-Power High-Performance Intel® Celeron® J1900 Quad-Core Processor
+                    li Sleek and Compact Body with Small Footprint
+                    li Bezel-Free True-Flat PCAP Touch
+                    li 15" or 19.5" Display with LED Backlight Delivering Bright and Crisp Images
+                    li Multiple I/O Interfaces for Peripherals
+                    li Flexible Installation on a Counter or a Wall
+                    li Faster Installation and Serviceability • Modern and Contemporary Styling for Interior Décor
+                    li Engineered and Optimized for Hospitality and Retail Businesses
+            .col-12.col-lg-6.d-flex.justify-content-center
+                img(src='resources/imgs/posbank.jpg', width='322' height='300')
+            .col-12.d-flex.justify-content-center.my-3
+                +Youtube("https://www.youtube.com/embed/Y1mL9yZ3Vkg", 800, 450)
+
+        #clover.row.bg-white.shadow.rounded.p-5.m-2
+            .col-12.mb-5
+                .h1.font-weight-bold.text-center.text-primary Clover:
+            .col-12.d-flex.justify-content-center
+                #carousel.carousel.slide.overflow-hidden.rounded(data-ride="carousel" style='width:700px; height:350px')
+                    ol.carousel-indicators
+                        li.active(data-target="#carousel" data-slide-to="0")
+                        li(data-target="#carousel" data-slide-to="1")
+                        li(data-target="#carousel" data-slide-to="2")
+                    .carousel-inner
+                        .carousel-item.active
+                            img.d-block.w-100(src='resources/imgs/clover-station-1.jpg')
+                        .carousel-item
+                            img.d-block.w-100(src='resources/imgs/clover-mini.jpg')
+                            .caption-top.text-center
+                                .h3.mt-3 Clover Mini
+                                .h5 Used as Customer Facing Terminal
+                        .carousel-item
+                            img.d-block.w-100(src='resources/imgs/clover-flex.jpg')
+                            .caption-top.text-center
+                                .h3.mt-3 Clover Flex
+                                .h5 A handheld POS terminal
+                    a.carousel-control-prev(href='#carousel' role='button' data-slide='prev')
+                        span.carousel-control-prev-icon(aria-hidden="true")
+                        span.sr-only Previous
+                    a.carousel-control-next(href="#carousel" role='button' data-slide='next')
+                        span.carousel-control-next-icon(aria-hidden="true")
+                            span.sr-only Next
+            .col-12.col-lg-6.my-1.d-flex.justify-content-center.justify-content-lg-end
+                img(src='resources/imgs/clover-station-back.png', width='322' height='300')
+            .col-12.col-lg-6.mt-5
+                text-dark.m-2.h2 Clover POS:
+                ul.mt-4
+                    li Sleek custom made hardware
+                    li Integrate with an expanding list of apps
+                    li Built-in credit card reader, and EMV chip reader
+                    li Multiple platform for you to choose from
+                    li Rotatable station screen
+                    li Easy installation
+            .col-12.d-flex.justify-content-center.my-3
+                +Youtube("https://www.youtube.com/embed/ATVFFNkB-2I", 700, 350)
+
+        #terminals.row.bg-white.shadow.rounded.p-5.m-2
+            .col-12.mb-5
+                .h1.font-weight-bold.text-center.text-primary Credit Card Terminals:
+            #s300.col-12.d-flex.justify-content-center.row
+                .col-12.col-lg-6.d-flex.justify-content-center.justify-content-lg-end
+                    img(src='resources/imgs/s300.jpg', width='250' height='400').rounded
+                .col-12.col-lg-6.my-5
+                    .h3.text-dark.m-2.h2 Pax S300
+                    ul
+                        li Supports EMV, MSR and NFC
+                        li EMV and PCI Compliant
+                        li Good for both standalone or integration
+                        li Responsive touch screen
+                    .text-black-50.
+                        &emsp; The Pax S300 credit card terminal is the high-performance
+                        payment solution for merchants who wish to offer high level of
+                        security and contactless transaction to their customers. It
+                        protects and encrypts all transaction information. The S300 offers
+                        everything a merchant needs in a sleek and compat package.
+            .col-12.my-5
+                hr.p-0.m-0
+            #a920.col-12.d-flex.justify-content-center
+                #a920-carousel.carousel.slide.overflow-hidden.rounded(data-ride="carousel" style='width:606px; height:454px')
+                    ol.carousel-indicators
+                        li.active(data-target="#a920-carousel" data-slide-to="0")
+                        li(data-target="#a920-carousel" data-slide-to="1")
+                    .carousel-inner
+                        .carousel-item.active
+                            img.d-block.w-100(src='resources/imgs/a920-1.jpg')
+                        .carousel-item
+                            img.d-block.w-100(src='resources/imgs/a920-2.jpg')
+                    a.carousel-control-prev(href='#a920-carousel' role='button' data-slide='prev')
+                        span.carousel-control-prev-icon(aria-hidden="true")
+                        span.sr-only Previous
+                    a.carousel-control-next(href="#a920-carousel" role='button' data-slide='next')
+                        span.carousel-control-next-icon(aria-hidden="true")
+                            span.sr-only Next
+            .col-12.row.my-5
+                .col-12.col-lg-6
+                    .h3.text-dark.m-2.h2.text-center Pax S920
+                    ul
+                        li Responsive touch screen
+                        li Supports EMV, MSR and NFC
+                        li Built-in thermal printer
+                        li Supports mobile data
+                        li Supports electronic signature capture
+                        li Internal battery
+                        li User friendly graphical user interface
+                .col-12.col-lg-6
+                    .text-black-50.mt-5.
+                        &emsp; The Pax A920 is a pocket size mobile payment device.
+                        It offers high portability while keeping a comprehensive functionality
+                        and ease-of-use. It uses mobile network similar to a cell-phone, so
+                        a merchant can process anywhere. while out for the job, the built-in
+                        thermal printer ensures that a paper receipt can be printed when needed,

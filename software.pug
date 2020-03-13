@@ -1,0 +1,32 @@
+extends templates/base
+
+block contents
+    .container.mx-auto.my-3.d-flex.flex-column
+        .bg-white.shadow.rounded
+            .d-inline-block.bg-dark.m-2.rounded
+                img(src='resources/imgs/mcpos-banner.png')
+            hr.p-0.my-1
+            .row.m-2
+                .col-12.col-lg-8
+                    .h6 &emsp; MCPOS is a POS software designed for dine in restaurants, fast food restaurants, buffets and supermarkets.
+                    .h5 Main features includes:
+                    ul
+                        li Multi language support
+                        li Integrated online order website
+                        li Portable mobile platforms (tablets)
+                        li Allowing customers to order by themselves (Koisk)
+                        li Customizable Loyalty program
+                        li Gift card support
+                        li Credit card terminal integration
+                    .h6 Learn more at their
+                        a(href='http://www.mcpos.com/index.html').m-1 Official Website
+                .d-flex.col-12.col-lg-4
+                    .m-auto
+                        img(src='resources/imgs/mcpos-computer.png', width='322' height='300')
+            .text-center
+                a.btn.btn-primary.m-3(data-toggle='collapse' href='#mcpos-video' role='button' aria-expanded='false' aria-controls='mcpos-video') Introduction Video
+            #mcpos-video.collapse
+                .d-flex.justify-content-center.m-3
+                    +Youtube('https://www.youtube.com/embed/uVwG5n6vae8?list=PLn6Xuwp-PDEHP_HH5vvZ7t3U8QgHbwOX7', 600, 450)
+
+
