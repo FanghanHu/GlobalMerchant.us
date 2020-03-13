@@ -29,4 +29,32 @@ block contents
                 .d-flex.justify-content-center.m-3
                     +Youtube('https://www.youtube.com/embed/uVwG5n6vae8?list=PLn6Xuwp-PDEHP_HH5vvZ7t3U8QgHbwOX7', 600, 450)
 
-
+        .bg-white.shadow.rounded.mt-3
+            .d-inline-block.bg-white.m-2.rounded
+                img(src='resources/imgs/possible-banner.png')
+            hr.p-0.my-1
+            .row.m-2
+                .col-12.col-lg-8
+                    .h6 &emsp; POSsible specializes in complete POS systems and POS software to meet the needs of almost any business environment, including restaurants, groceries, salons, convenience stores, and liquor stores, to name a few. We carry only high-quality, brand name POS Equipment.
+                    .h5 Main features includes:
+                    ul
+                        li Restaurant & Retail POS Solution
+                        li Dine-In & QSR
+                        li Product & Inventory Management
+                        li Employee Management
+                        li Customer Management
+                        li Customer Loyalty & Gift Cards
+                        li Real-time online reporting
+                        li Credit card terminal integration
+                        li Sales and Analytic Reporting
+                        li Technical Support - 24/7/365 Days
+                    .h6 Learn more at their
+                        a(href='http://www.possiblepos.com/').m-1 Official Website
+                .d-flex.col-12.col-lg-4
+                    .m-auto
+                        img(src='resources/imgs/possible-computer.jpg', width='322' height='300')
+            .text-center
+                a.btn.btn-primary.m-3(data-toggle='collapse' href='#possible-video' role='button' aria-expanded='false' aria-controls='possible-video') Introduction Video
+            #possible-video.collapse
+                .d-flex.justify-content-center.m-3
+                    +Youtube('https://www.youtube.com/embed/iVGhhwrYUSE', 600, 450)
